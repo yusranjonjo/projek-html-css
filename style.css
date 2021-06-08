@@ -39,7 +39,7 @@ place-items: center;
 .header .h1 {
     text-align: center;
     color: var(--color-header);
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 .header small{
