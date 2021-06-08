@@ -8,9 +8,91 @@ box-sizing: border-box;
 
 :root{
 font: 10px 'poppins', sans-serif;
+--bg-body: #054c55;
+--bg-container: #ccc;
+--color-header: #724c06;
+--bg-footer: #000;
+}
+
+body {
+    background: var(--bg-body);
 }
 
 .container {
 width: 90%;
+min-height: 100%;
+margin: 30px auto 0 auto;
+padding: 30px 20px 0 20px;
+background: var(--bg-container);
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+place-items: center;
+}
+
+.header {
+    padding: 10px;
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+}
+
+.header .h1 {
+    text-align: center;
+    color: var(--color-header);
+    font-size: 3.5rem;
+}
+
+.header small{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.hero {
+    display: grid;
+    place-items: center;
+    gap: 10px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+}
+
+.main .h3 {
+    padding: 20px;
+    font-size: 1.6rem;
+}
+
+.isi-biografi ul {
+    margin: -40px 0 0 0;
+    padding: 30px;
+}
+.isi-biografi ul li {
+    padding: 5px;
+    text-align: left;
+    text-indent: 10px;
+    word-spacing: 3px;
+    font-size: 1.3rem;
+}
+
+.main p {
+    font-size: 1.5rem;
+}
+
+.footer {
+width: 90%;
+margin: 0 auto 50px auto;
+padding: 30px 20px 30px 20px;
+background: var(--bg-footer);
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+place-items: center;
+gap: 5px;
+}
+
+.footer p {
+    font-size: 1.2rem;
+}
+.footer .copyright {
+color: #fff;
 }
 
